@@ -25,9 +25,21 @@
 </head>
 <body>
     <main id="app">
-        <p v-for="mail in randomMail">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-flex flex-column align-items-center p-2" v-for="mail in randomMail">
+                    <p  class="text-danger">
+                        Mail genrata randomicamente tramite API: 
+                    </p>
+                    <p class="text-white">
+                        {{  mail }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- <p v-for="mail in randomMail" class="text-white">
             {{  mail }}
-        </p>
+        </p> -->
     </main>
     <script src="js/main.js"></script>
 </body>
